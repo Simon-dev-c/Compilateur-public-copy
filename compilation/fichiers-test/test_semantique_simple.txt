@@ -1,0 +1,21 @@
+program {
+    var x: ent;
+    var y: bool;
+    var z: reel;
+    
+    procedure test() {
+        x <- 42;
+        y <- faux;
+        z <- 3;
+        
+        x <- vrai;
+        
+        y <- 10;
+        
+        z <- 2;
+    }
+    x <- 5;
+    test();
+    ECRIRE("Valeur de x : ", x);
+
+}

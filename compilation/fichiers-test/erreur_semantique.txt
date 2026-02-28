@@ -1,0 +1,27 @@
+program {
+	
+    var a : bool;
+    var a : ent;
+    var y : inconnu;
+
+	fonction f(a : ent) retour car {
+		retour 30;
+	}
+
+    fonction f2(a : ent) retour car {
+	}
+
+     procedure initialiser() {
+        compteur <- 0;
+        total <- 0.0;
+        actif <- vrai;
+        retour 50;
+    }
+
+	a <- f(x);
+
+    a <- 42;
+    z <- 42;
+
+	retour a;
+}

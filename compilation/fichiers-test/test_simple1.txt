@@ -1,0 +1,51 @@
+program {
+    var x : ent;
+    var y : ent;
+    procedure  p1(x : ent;y:ent){ 
+        var z : ent;
+        procedure coucou(){
+        }
+        procedure  p2(){ 
+            procedure  p3(){ 
+                procedure  p4(){ 
+                    procedure  p5(){ 
+                        
+                    }
+                    p5();
+                }
+                p4();
+            }
+            y <- 7;
+            p3();
+        }
+        fonction f1(x : ent) retour ent{
+            var a:reel;
+            a <- 5.3;
+            retour 3;
+        }
+        procedure p6(){      
+            procedure p7(){
+                coucou();
+            }
+            p7();         
+        }
+        x <- 9;
+        y <- 3;
+        p2();
+        p6();
+
+        f1(x);
+
+    }
+    
+    x <- 5;
+    p1(x,x);
+
+    y <- 2;
+
+    x <- y + 3;
+
+    x <- 6;
+    x <- 7;
+
+}   

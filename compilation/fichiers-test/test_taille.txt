@@ -1,0 +1,10 @@
+program {
+    type personne: struct
+        age: ent;
+        poids: reel;
+        actif: bool
+    fstruct;
+    
+    var x: ent;
+    var p: personne;
+}

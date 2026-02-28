@@ -1,0 +1,30 @@
+program {
+    var x : ent;
+
+    procedure  p1(x : ent;y:ent){ 
+        x <- 3;
+        y <- 4;
+
+        y <- y + x*2;
+
+        si ( x == y ) alors {
+            x <- 1;
+        }
+    }
+    fonction f1(x : ent) retour ent{
+        var a:reel;
+        a <- 5.3;
+        si (1) alors {
+            retour 1;
+        } sinon {
+            retour 0;
+        }
+        retour 1;
+    }
+    
+    x <- 5;
+
+    p1(x,x);
+
+
+}   

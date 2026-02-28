@@ -1,0 +1,20 @@
+program {
+
+    var test : ent;
+    var x : ent;
+
+    procedure p1(y : ent) {
+
+        retour 2.0;
+    }
+
+    x <- 10;
+
+    si (test == 10) alors {
+        x <- 4;
+    } sinon si (test == 5) alors {
+        x <- 7; 
+    } sinon {
+        x <- 17;
+    }
+}

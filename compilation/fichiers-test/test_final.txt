@@ -1,0 +1,75 @@
+program {
+    var compteur: ent;
+    var total: reel;
+    var actif: bool;
+    
+    type point: struct
+        x: ent;
+        y: ent
+    fstruct;
+    
+    type vecteur: tab[1..10] de ent;
+    
+    var coords: point;
+    var liste: vecteur;
+    
+    procedure initialiser() {
+        compteur <- 0;
+        total <- 0.0;
+        actif <- vrai;
+    }
+    
+    procedure incrementer() {
+        compteur <- compteur + 1;
+    }
+    
+    fonction somme(a: ent; b: ent) retour ent {
+        retour a + b;
+    }
+    
+    fonction estPositif(n: ent) retour bool {
+        retour vrai;
+    }
+    
+    initialiser();
+    
+    compteur <- 42;
+    total <- 3.14;
+    actif <- vrai;
+    
+    coords.x <- 10;
+    coords.y <- 20;
+    
+    incrementer();
+    
+    compteur <- somme(5, 10);
+    actif <- estPositif(compteur);
+    
+    liste[1] <- 100;
+    liste[5] <- liste[1] + 50;
+    compteur <- liste[5];
+    
+    si (compteur > 50) alors {
+        total <- total + 10.0;
+    }
+    sinon {
+        total <- total - 5.0;
+    }
+    
+    si ((compteur > 0) && (actif)) alors {
+        si (total < 100.0) alors {
+            incrementer();
+        }
+        sinon {
+            compteur <- compteur - 1;
+        }
+    }
+    
+    compteur <- 1;
+    tant_que (compteur <= 5) faire {
+        total <- total + 0.5;
+        compteur <- compteur + 1;
+    }
+    
+    actif <- faux;
+}

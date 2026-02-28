@@ -1,0 +1,7 @@
+program{
+
+    fonction test(x:ent) retour int{
+        x <- 42;
+        retourne x;
+    }
+}

@@ -1,0 +1,41 @@
+program {
+
+    
+    type date : struct
+        jour : ent;
+        mois : ent;
+        annee : ent
+    fstruct;
+
+
+    type plusieursDates : tab[5..5,4..6] de date;
+
+
+
+    var b : bool;
+    var x : reel;
+    var uneDate : date;
+    var desDates : plusieursDates;
+
+
+
+
+    
+    procedure p2(n : ent; m : reel) { 
+
+        fonction f3(t : ent; v : reel) retour reel { 
+
+
+            retour 3.0;
+            
+        }
+
+
+        
+        retour;
+    }
+
+
+    retour;
+
+}

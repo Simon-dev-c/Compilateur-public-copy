@@ -1,0 +1,10 @@
+program {
+	var a : bool;
+
+	fonction f(a : ent) retour ent {
+	return int;
+	}
+	a <- f(1);
+
+	retour a;
+}

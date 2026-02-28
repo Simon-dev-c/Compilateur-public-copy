@@ -1,0 +1,10 @@
+program {
+    var x: ent;
+    var b: bool;
+
+    si ( b ) alors {
+        x <- 10;
+    } sinon {
+        x <- 3;
+    }
+}

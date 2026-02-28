@@ -1,0 +1,24 @@
+program{
+    type x : tab[5..5,4..6] de ent;
+    type y: struct
+			ch1: ent;
+			ch2: ent;
+			ch3: ent
+	fstruct;
+    var a : ent;
+    /* Interdit
+    var b : x;
+    var c : y;
+    */
+    fonction f1(x : ent) retour vide{
+        var a:reel;
+        a <- 5.3;
+        retour ;
+    }
+    /*
+    c.ch1 <- 3;
+    a <- f1(3);
+    a <- b[1,4];
+    */
+
+}
